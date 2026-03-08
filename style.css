@@ -690,6 +690,81 @@ footer .legal {
     font-size: 1.02em;
 }
 
+/* --- Philosophy Page --- */
+.axiom-block {
+    background: #f7f8fa;
+    border-left: 4px solid #2d5aa0;
+    border-radius: 4px;
+    padding: 1.5rem 2rem;
+    margin: 1.5rem 0;
+    max-width: 75ch;
+}
+
+.axiom-block p {
+    margin-bottom: 0.5rem;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.axiom-block p:last-child {
+    margin-bottom: 0;
+}
+
+.axiom-limits {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.axiom-limits li {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+.depth-state {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.5rem 2rem;
+    margin: 1.25rem 0;
+    max-width: 75ch;
+}
+
+.depth-state h4 {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    font-weight: normal;
+    color: #2d5aa0;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.depth-state p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+
+.closing-aphorisms {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e0e0e0;
+}
+
+.aphorism {
+    font-family: Georgia, serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    color: #333;
+    line-height: 1.8;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e8e8e8;
+    max-width: 70ch;
+}
+
+.aphorism:last-child {
+    border-bottom: none;
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
     html { font-size: 16px; }
