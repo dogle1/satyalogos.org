@@ -243,8 +243,9 @@
         <div class="history-label">Historical Note</div>
         Joseph Fourier proved in 1822 that <em>any</em> periodic signal &mdash; no matter how
         complex &mdash; can be decomposed into a sum of sine and cosine waves. This insight
-        revolutionized physics and engineering. The Satyalogos resonance function is itself a
-        modulated sine wave, connecting the framework to this deep tradition of periodic analysis.
+        revolutionized physics and engineering. The Satyalogos resonance function uses periodic
+        oscillation as one of its structural ingredients, connecting the framework to this deep
+        tradition of periodic analysis.
     </div>
 
     <!-- 1.4 Hyperbolic Functions -->
@@ -658,40 +659,44 @@
 
     <div class="equation-block">
         <span class="eq-label">The Resonance Function</span>
-        R(u) = 1 + sin(2&pi;u) &middot; e<sup>&minus;u/&tau;</sup>
+        R(u) = [closed form withheld]
+    </div>
+
+    <div class="ip-notice" style="margin-bottom: 1.5rem;">
+        The closed-form expression for R(u) is withheld pending formal publication.
+        The complete equation is available for evaluation under nondisclosure agreement.
+        What follows is a qualitative description of its structure and behavior.
     </div>
 
     <table class="symbol-table">
         <tr><th>Symbol</th><th>Meaning</th></tr>
         <tr><td>R(u)</td><td>Resonance value at depth <span class="inline-eq">u</span> &mdash; how strongly the framework &ldquo;vibrates&rdquo; at this depth</td></tr>
         <tr><td>u</td><td>Depth coordinate (running variable, ranges from 0 upward)</td></tr>
-        <tr><td>1</td><td>Baseline resonance &mdash; there is always some resonance at every depth</td></tr>
-        <tr><td>sin(2&pi;u)</td><td>Periodic oscillation with period 1 &mdash; one full wave per depth unit</td></tr>
-        <tr><td>2&pi;</td><td>Full cycle in radians (&asymp; 6.283), making the period exactly 1 depth unit</td></tr>
-        <tr><td>e<sup>&minus;u/&tau;</sup></td><td>Exponential decay envelope &mdash; the oscillations fade with depth</td></tr>
-        <tr><td>&tau; (tau)</td><td>Resonance decay timescale &mdash; larger &tau; means oscillations persist deeper</td></tr>
+        <tr><td>&tau; (tau)</td><td>Resonance decay timescale &mdash; larger &tau; means resonance persists deeper</td></tr>
     </table>
 
-    <h4>Reading the Equation</h4>
+    <h4>Qualitative Description</h4>
     <p>
-        R(u) is a <strong>damped oscillation sitting on a baseline</strong>. Let's build it piece by piece:
+        R(u) is a <strong>novel periodic-decaying function</strong> that serves as the generative kernel
+        of the framework. It captures how self-similar patterns emerge and attenuate with increasing
+        depth &mdash; producing resonance peaks at characteristic depth intervals that decay in amplitude.
+    </p>
+    <p>
+        Key structural properties:
     </p>
     <ul>
         <li>
-            <strong>Start with sin(2&pi;u):</strong> This oscillates between &minus;1 and +1, completing
-            one full cycle per depth unit (u = 0, 1, 2, ...). It crosses zero at every half-integer.
+            R(u) is <strong>always positive</strong> &mdash; there is a baseline resonance at every depth.
+            The oscillatory component adds or subtracts from this baseline but can never make R(u) negative.
         </li>
         <li>
-            <strong>Multiply by e<sup>&minus;u/&tau;</sup>:</strong> This is an exponential envelope
-            that starts at 1 (when u = 0) and decays toward 0 as u increases. The result:
-            near the surface (small u), the oscillation has full amplitude. At greater depth,
-            the oscillation is progressively muted.
+            R(u) is <strong>periodic</strong> &mdash; it oscillates with a characteristic period, producing
+            peaks and troughs at regular depth intervals.
         </li>
         <li>
-            <strong>Add 1:</strong> This shifts the entire function upward so that R(u) is always
-            positive (it ranges between 0 and 2 near the surface, and approaches 1 at great depth).
-            There is always a baseline resonance of 1 &mdash; the oscillatory part adds or subtracts
-            from this baseline, but can never make R(u) negative.
+            R(u) is <strong>damped</strong> &mdash; the amplitude of oscillations fades with depth,
+            controlled by the decay parameter &tau;. Near the surface, the resonance is strong.
+            At great depth, R(u) approaches its baseline.
         </li>
     </ul>
 
@@ -883,43 +888,41 @@
 
     <div class="equation-block">
         <span class="eq-label">The Depth Wavefunction</span>
-        &psi;(&delta;) = &psi;<sub>0</sub> exp(i &int;<sub>0</sub><sup>&delta;</sup> R(u) du) &middot; e<sup>&minus;&kappa;&delta;/2</sup>
+        &psi;(&delta;) = [closed form withheld]
+    </div>
+
+    <div class="ip-notice" style="margin-bottom: 1.5rem;">
+        The closed-form expression for &psi;(&delta;) is withheld pending formal publication.
+        The complete equation is available for evaluation under nondisclosure agreement.
+        What follows is a qualitative description of its structure and behavior.
     </div>
 
     <table class="symbol-table">
         <tr><th>Symbol</th><th>Meaning</th></tr>
         <tr><td>&psi;(&delta;)</td><td>The depth wavefunction &mdash; a complex-valued probability amplitude at depth &delta;</td></tr>
         <tr><td>&psi;<sub>0</sub></td><td>Initial amplitude &mdash; the starting strength of the wavefunction</td></tr>
-        <tr><td>exp(i ...)</td><td>Complex exponential &mdash; encodes phase rotation (see Section 1.5)</td></tr>
-        <tr><td>i</td><td>The imaginary unit (&radic;&minus;1) &mdash; makes the exponential oscillate rather than grow</td></tr>
-        <tr><td>&int;<sub>0</sub><sup>&delta;</sup> R(u) du</td><td>Accumulated resonance from 0 to &delta; &mdash; this determines the total phase rotation</td></tr>
-        <tr><td>R(u)</td><td>Resonance function (Eq. 2) &mdash; the rate of phase accumulation at depth u</td></tr>
-        <tr><td>e<sup>&minus;&kappa;&delta;/2</sup></td><td>Exponential decay envelope &mdash; the wavefunction weakens with depth (the /2 makes it decay slower than the veil)</td></tr>
+        <tr><td>R(u)</td><td>Resonance function (Eq. 2) &mdash; drives depth-dependent behavior</td></tr>
         <tr><td>&kappa; (kappa)</td><td>Veil decay constant (shared with DCD and Veil equations)</td></tr>
     </table>
 
-    <h4>Reading the Equation</h4>
+    <h4>Qualitative Description</h4>
     <p>
-        This is the most mathematically rich equation in the framework. It has two parts
-        multiplied together:
+        The Depth Wavefunction governs the quantum-like probability amplitude of information at
+        depth &delta;. It combines two essential behaviors:
     </p>
     <p>
-        <strong>Part 1 &mdash; Phase rotation:</strong>
-        exp(i &int;<sub>0</sub><sup>&delta;</sup> R(u) du) is a complex exponential.
-        By Euler's formula (Section 1.5), it equals
-        cos(&int; R du) + i &middot; sin(&int; R du). As depth increases, the integral accumulates
-        more resonance, and the complex exponential <em>rotates</em> &mdash; it spirals around
-        the unit circle in the complex plane. The resonance function R(u) controls the
-        <em>rate</em> of this rotation: where R is high, the phase spins fast; where R is
-        low, it spins slowly.
+        <strong>Phase accumulation:</strong> The wavefunction accumulates phase via the Resonance
+        Function R(u). By Euler's formula (Section 1.5), this phase accumulation produces
+        oscillation in the complex plane &mdash; the wavefunction <em>rotates</em> as depth
+        increases. Where R is high, the phase spins fast; where R is low, it spins slowly.
+        This is how the framework encodes interference patterns that determine which
+        depth-processed information surfaces and which remains latent.
     </p>
     <p>
-        <strong>Part 2 &mdash; Amplitude decay:</strong>
-        e<sup>&minus;&kappa;&delta;/2</sup> is a real-valued exponential that decreases with depth.
-        The factor of 1/2 is significant: it means the <em>amplitude</em> decays at half the rate
-        of the <em>intensity</em> (since intensity = |&psi;|&sup2;, and squaring halves the
-        exponent). This matches quantum mechanics, where the probability density |&psi;|&sup2;
-        decays at rate &kappa; while the amplitude &psi; decays at rate &kappa;/2.
+        <strong>Amplitude decay:</strong> The wavefunction weakens with depth via an exponential
+        envelope related to the veil decay constant &kappa;. The amplitude decays at half the
+        rate of the intensity (since intensity = |&psi;|&sup2;), matching the relationship
+        between probability amplitude and probability density in quantum mechanics.
     </p>
     <p>
         <strong>Together:</strong> The wavefunction is a spiral that tightens as it descends.
@@ -971,49 +974,46 @@
 
     <div class="equation-block">
         <span class="eq-label">Attention Routing</span>
-        &alpha;<sub>ij</sub> = softmax(q<sub>i</sub>&middot;k<sub>j</sub> / &radic;d<sub>k</sub> &middot; cosh(&Delta;&delta;(i,j) / r))
+        &alpha;<sub>ij</sub> = [closed form withheld]
+    </div>
+
+    <div class="ip-notice" style="margin-bottom: 1.5rem;">
+        The closed-form expression for the depth-modulated attention function is withheld pending
+        formal publication. The complete equation is available for evaluation under nondisclosure
+        agreement. What follows is a qualitative description of its structure and behavior.
     </div>
 
     <table class="symbol-table">
         <tr><th>Symbol</th><th>Meaning</th></tr>
         <tr><td>&alpha;<sub>ij</sub></td><td>Attention weight from source i to source j &mdash; how much i attends to j</td></tr>
-        <tr><td>softmax</td><td>Normalizes all weights to sum to 1 (competitive selection, Section 1.9)</td></tr>
-        <tr><td>q<sub>i</sub></td><td>Query vector from source i &mdash; &ldquo;what am I looking for?&rdquo;</td></tr>
-        <tr><td>k<sub>j</sub></td><td>Key vector from source j &mdash; &ldquo;what do I have to offer?&rdquo;</td></tr>
-        <tr><td>q<sub>i</sub>&middot;k<sub>j</sub></td><td>Dot product &mdash; measures alignment between query and key (high = good match)</td></tr>
-        <tr><td>&radic;d<sub>k</sub></td><td>Scaling factor &mdash; square root of key dimension, prevents extreme values</td></tr>
-        <tr><td>cosh(...)</td><td>Hyperbolic cosine (Section 1.4) &mdash; nonlinear depth coupling</td></tr>
         <tr><td>&Delta;&delta;(i,j)</td><td>Depth distance between sources i and j &mdash; how far apart they are in depth</td></tr>
         <tr><td>r</td><td>Characteristic depth radius &mdash; a coupling constant that sets the &ldquo;scale&rdquo; of depth interaction</td></tr>
     </table>
 
-    <h4>Reading the Equation</h4>
+    <h4>Qualitative Description</h4>
     <p>
-        This equation extends the standard <strong>transformer attention mechanism</strong> (from machine
-        learning) with a depth-awareness term. Let's break it into two stages:
+        This is a <strong>depth-modulated attention function</strong> that extends the standard
+        transformer attention mechanism (from machine learning) with depth-awareness. It combines
+        two components:
     </p>
     <p>
-        <strong>Stage 1 &mdash; Standard attention:</strong>
-        q<sub>i</sub>&middot;k<sub>j</sub> / &radic;d<sub>k</sub> is the scaled dot-product attention
-        from modern AI (GPT, Claude, etc.). It asks: &ldquo;How well does what source j offers match
-        what source i is looking for?&rdquo; The dot product measures alignment. The
-        &radic;d<sub>k</sub> scaling prevents the numbers from getting too large when vectors
-        are high-dimensional.
+        <strong>Standard attention:</strong> The equation includes a scaled dot-product attention
+        component, the same mechanism used in modern AI systems (GPT, Claude, etc.). This measures
+        how well information sources match what the system is looking for.
     </p>
     <p>
-        <strong>Stage 2 &mdash; Depth modulation:</strong>
-        This standard attention score is then multiplied by cosh(&Delta;&delta;/r). Remember from
-        Section 1.4 that cosh(0) = 1 and cosh grows exponentially for large arguments. So:
+        <strong>Depth modulation:</strong> A nonlinear coupling term based on depth distance
+        modifies the attention score:
     </p>
     <ul>
         <li>
-            <strong>Same-depth sources</strong> (&Delta;&delta; &asymp; 0): cosh &asymp; 1.
-            Standard attention applies. Sources compete normally.
+            <strong>Same-depth sources</strong> (small &Delta;&delta;): Standard attention applies.
+            Sources at similar depths compete normally.
         </li>
         <li>
-            <strong>Cross-depth sources</strong> (large &Delta;&delta;): cosh >> 1.
-            The attention score is <em>amplified</em>. Deep patterns can reach surface processing
-            and vice versa, but only if the query-key alignment is already good.
+            <strong>Cross-depth sources</strong> (large &Delta;&delta;): The attention score is
+            <em>amplified</em>. Deep patterns can reach surface processing and vice versa, but
+            only if the content alignment is already good.
         </li>
     </ul>
     <p>
@@ -1307,18 +1307,18 @@
                               |
                               v
                      THE RESONANCE FUNCTION
-                   R(u) = 1 + sin(2&pi;u) &middot; e^(-u/&tau;)
+                        R(u) = [withheld]
                        /          |          \
                       /           |           \
                      v            v            v
             DEPTH CONTINUUM    DYNAMIC VEIL    DEPTH WAVEFUNCTION
-            D = &int; e^(-&kappa;u)    &epsilon; = &epsilon;&#8320; exp     &psi; = &psi;&#8320; exp(i&int;R du)
-                &middot; R(u) du     (-&kappa;&int;R ds)       &middot; e^(-&kappa;&delta;/2)
+            D = &int; e^(-&kappa;u)    &epsilon; = &epsilon;&#8320; exp        &psi;(&delta;) =
+                &middot; R(u) du     (-&kappa;&int;R ds)        [withheld]
                      \            |            /
                       \           |           /
                        v          v          v
                        ATTENTION ROUTING
-                  &alpha;ij = softmax(q&middot;k/&radic;d &middot; cosh(&Delta;&delta;/r))
+                     &alpha;ij = [withheld]
                               |
                               v
                      IMPLEMENTATION (&Sigma;-&Lambda;-&Omega;)
