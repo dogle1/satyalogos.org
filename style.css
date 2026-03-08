@@ -314,15 +314,37 @@ nav .container {
     margin-top: 2rem;
 }
 
+.collab-grid .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.collab-grid .card .btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 /* --- Contact Section --- */
 .contact-section {
     text-align: center;
     padding: 4rem 0;
 }
 
+.contact-section p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact-email {
     font-size: 1.15rem;
     font-family: Georgia, serif;
+}
+
+.contact-bio {
+    margin-top: 1.5rem;
+    color: #666;
+    font-size: 0.92rem;
 }
 
 /* --- Footer --- */
