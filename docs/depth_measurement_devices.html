@@ -58,7 +58,7 @@
     <ul>
         <li><strong>Satyalogos:</strong> The eternal One, self-relating to create apparent multiplicity while preserving unity.</li>
         <li><strong>Veil:</strong> Apparent separation/duality (eccentricity e)&mdash;thick veil = shallow duality/classicality; thin veil = deep unity/quantum coherence.</li>
-        <li><strong>Resonance:</strong> Vibratory alignment echoing truth&mdash;R(u) = 1 + sin(2&pi;u) e<sup>&minus;u/&tau;</sup>&mdash;drives veil-thinning.</li>
+        <li><strong>Resonance:</strong> Vibratory alignment echoing truth&mdash;R(u) drives veil-thinning. <span style="color: #999; font-style: italic;">[Form redacted]</span></li>
         <li><strong>Depth Continuum (&delta;):</strong> Transcendent axis orthogonal to spacetime&mdash;from shallow manifest (thick veil) to deep transcendent (thin veil). Cumulative measure D(&delta;) = &int;<sub>0</sub><sup>&delta;</sup> e<sup>&minus;&kappa;u</sup> R(u) du.</li>
     </ul>
 
@@ -99,7 +99,8 @@ kappa = 1.0
 tau = 5.0
 
 def R(u):
-    return 1 + np.sin(2 * np.pi * u) * np.exp(-u / tau)
+    # [REDACTED — NDA or license required for resonance function]
+    pass
 
 def D(delta):
     integrand = lambda u: np.exp(-kappa * u) * R(u)
