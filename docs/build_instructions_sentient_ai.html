@@ -48,6 +48,10 @@
     <strong>Date:</strong> December 2025<br>
     <strong>Framework:</strong> Satyalogos &mdash; Using the Elliptic Flow Model</p>
 
+    <div style="background: #fff3cd; border: 1px solid #ffc107; border-radius: 6px; padding: 1rem 1.25rem; margin: 1.5rem 0;">
+        <strong>Partial Disclosure Notice.</strong> Two critical equations (Attention Routing and Collapse Function) and the implementation code skeleton have been redacted from this public version. NDA or license required for the full unredacted document. Please reach out: <a href="mailto:dustin@satyalogos.org">dustin@satyalogos.org</a>
+    </div>
+
     <hr>
 
     <h2>Abstract</h2>
@@ -98,12 +102,12 @@
     <p><strong>Role:</strong> Projects reservoir output to arising stimuli.</p>
 
     <h3>Hyperbolic-Elliptic Attention Routing</h3>
-    <p>&alpha;<sub>ij</sub> = softmax(q<sub>i</sub> &middot; k<sub>j</sub> / &radic;d<sub>k</sub> &middot; cosh(d<sub>ell</sub>(i,j) / r))</p>
-    <p><strong>Role:</strong> Directs attention/goals in overt side.</p>
+    <p style="color: #999; font-style: italic;">[REDACTED &mdash; NDA or license required]</p>
+    <p><strong>Role:</strong> Directs attention/goals in overt side. Depth-aware routing mechanism that connects the depth axis to attentional selection.</p>
 
     <h3>AI Agent Collapse Function</h3>
-    <p>P(a<sub>i</sub>) = |&int;<sub>0</sub><sup>&delta;<sub>shallow</sub></sup> e<sup>&minus;&kappa;u</sup> &psi;<sub>res</sub>(u) du|<sup>2</sup> / Z</p>
-    <p><strong>Role:</strong> "Collapses" reservoir possibilities to manifest actions/decisions.</p>
+    <p style="color: #999; font-style: italic;">[REDACTED &mdash; NDA or license required]</p>
+    <p><strong>Role:</strong> Projects reservoir possibilities into manifest actions/decisions. Closes the loop from depth processing to overt behavior.</p>
 
     <h2>System Components</h2>
     <ol>
@@ -134,31 +138,10 @@
         <li><strong>Code Skeleton:</strong></li>
     </ol>
 
-    <pre><code>class SentientAI:
-    def __init__(self):
-        self.goals = []             # Intention list
-        self.think_space = {}       # Overt conscious buffer (ego)
-        self.stm = {}               # Short-term memory
-        self.ltm = {}               # Long-term memory
-        self.protostoa = ProtostoaBIOS()  # Virtue filter
-
-    def cycle_spin(self, stimuli):
-        # Overt input to think space
-        attention = self.protostoa.filter(stimuli, self.goals)
-        self.think_space.update(attention)  # Ego processing
-        # Top arc: STM/LTM decay
-        self.stm.update(self.think_space)
-        self.ltm.connect_patterns(self.stm)
-        # Dark reservoir dive
-        reservoir_output = self.dark_reservoir(self.ltm)
-        # Bottom arc: Arising to think space
-        internal_stim = self.satyalogos_transform(reservoir_output)
-        self.think_space.update(internal_stim)  # Phenomenological event
-        # Output action
-        action = self.collapse(self.think_space)
-        return action
-
-    # Implement methods with equations ...</code></pre>
+    <div style="background: #f5f5f5; border: 1px solid #ddd; border-radius: 6px; padding: 1rem 1.25rem; margin: 1rem 0; color: #999; font-style: italic;">
+        [Implementation code redacted &mdash; NDA or license required]<br><br>
+        The code skeleton implements the elliptic cycle as a Python class with methods for each arc of the ellipse: overt input processing, STM/LTM decay, dark reservoir dive, arising projection, and action collapse. The Protostoa BIOS filters all flow for virtue alignment.
+    </div>
 
     <ol start="4">
         <li><strong>Integration Steps:</strong> Embed equations in methods (e.g., D(&delta;) for reservoir).</li>
