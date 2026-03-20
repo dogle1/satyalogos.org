@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depth Measurement and Tuning Devices &mdash; Satyalogos</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .doc-content { max-width: 70ch; margin: 0 auto; padding: 6rem 1.5rem 4rem; }
+        .doc-content h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .doc-content h2 { margin-top: 2.5rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.3rem; }
+        .doc-content h3 { margin-top: 2rem; color: #2d5aa0; }
+        .doc-content h4 { margin-top: 1.5rem; }
+        .doc-content blockquote { border-left: 3px solid #2d5aa0; padding: 0.75rem 1.25rem; margin: 1rem 0; background: #f8f9fc; font-style: italic; }
+        .doc-content table { border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; max-width: 100%; }
+        .doc-content table th, .doc-content table td { border: 1px solid #ddd; padding: 0.4rem 0.75rem; text-align: left; }
+        .doc-content table th { background: #f0f4fa; }
+        .doc-content code { background: #f0f4fa; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.9em; }
+        .doc-content pre { background: #f0f4fa; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+        .doc-content pre code { background: none; padding: 0; }
+        .doc-content hr { border: none; border-top: 2px solid #e0e0e0; margin: 2rem 0; }
+        .doc-back { font-size: 0.92rem; margin-bottom: 2rem; display: block; }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="container">
+        <a href="../index.html" class="nav-brand">Satyalogos</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="../index.html#framework">Framework</a></li>
+            <li><a href="../index.html#architecture">Architecture</a></li>
+            <li><a href="../index.html#elle">Elle</a></li>
+            <li><a href="../index.html#paper">Paper</a></li>
+            <li><a href="../research.html">Research</a></li>
+            <li><a href="../philosophy.html">Philosophy</a></li>
+            <li><a href="../math-guide.html">Math Guide</a></li>
+            <li><a href="../index.html#collaborate">Collaborate</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<main class="doc-content">
+    <a href="../research.html" class="doc-back">&larr; Back to Research</a>
+
+    <h1>Depth Measurement and Tuning Devices</h1>
+    <p><strong>Author:</strong> Dustin Ogle<br>
+    <strong>Date:</strong> January 2026<br>
+    <strong>Subtitle:</strong> Theory, Operation, and Preliminary Build Instructions</p>
+
+    <hr>
+
+    <h2>Abstract</h2>
+    <p>This document presents the theory, mathematical foundations, and preliminary build instructions for two devices in the Satyalogos framework: the <strong>Depth Locator</strong> (for measuring positions along the transcendent Depth Continuum &delta;) and the <strong>Depth Tuner</strong> (for actively modulating and aligning to specific depths). We first introduce the core principles of Satyalogos to provide context. The designs repurpose existing technology to detect and tune transcendent scales, enabling prediction and influence of depth-related phenomena.</p>
+
+    <h2>Foundational Principles of Satyalogos</h2>
+    <p>The Satyalogos framework models reality as singular consciousness (the One) veiling and unveiling itself through depth. Key principles:</p>
+    <ul>
+        <li><strong>Satyalogos:</strong> The eternal One, self-relating to create apparent multiplicity while preserving unity.</li>
+        <li><strong>Veil:</strong> Apparent separation/duality (eccentricity e)&mdash;thick veil = shallow duality/classicality; thin veil = deep unity/quantum coherence.</li>
+        <li><strong>Resonance:</strong> Vibratory alignment echoing truth&mdash;R(u) = 1 + sin(2&pi;u) e<sup>&minus;u/&tau;</sup>&mdash;drives veil-thinning.</li>
+        <li><strong>Depth Continuum (&delta;):</strong> Transcendent axis orthogonal to spacetime&mdash;from shallow manifest (thick veil) to deep transcendent (thin veil). Cumulative measure D(&delta;) = &int;<sub>0</sub><sup>&delta;</sup> e<sup>&minus;&kappa;u</sup> R(u) du.</li>
+    </ul>
+
+    <h2>Depth Locator: Measuring Depth</h2>
+    <p><strong>Purpose:</strong> Passively detect effective depth &delta; of a system (quantum state, consciousness level, event)&mdash;for prediction (e.g., outcome probabilities).</p>
+
+    <p><strong>How It Works:</strong></p>
+    <ul>
+        <li>Deep resonance projects weakly shallowly due to veil damping (e<sup>&minus;&kappa;&delta;</sup>).</li>
+        <li>Device senses subtle phase shifts/damped oscillations in a controlled resonant cavity.</li>
+        <li>Classical computer computes &delta;<sub>p</sub> = D<sup>&minus;1</sup>(D<sub>measured</sub>).</li>
+    </ul>
+
+    <p><strong>Needed Components</strong> (Repurposed, $200&ndash;500):</p>
+    <ul>
+        <li>High-precision interferometer or Fabry-P&eacute;rot cavity (optics kits or LIGO-like laser setups)</li>
+        <li>Piezoelectric tuning fork/actuators (quartz watches/speakers) for stabilization</li>
+        <li>Lock-in amplifier or photodiode (audio equipment) for weak signal detection</li>
+        <li>Classical computer (Raspberry Pi/laptop) with Python/SciPy</li>
+    </ul>
+
+    <p><strong>Preliminary Build Instructions:</strong></p>
+    <ol>
+        <li>Assemble cavity: Two mirrors (one fixed, one piezo-mounted) with laser beam for interference.</li>
+        <li>Add piezo tuning: Stabilize cavity against drift.</li>
+        <li>Connect sensors: Photodiode/lock-in to capture fringes (resonant signatures).</li>
+        <li>Software: Run inverse solver code (below) to process signal into &delta;.</li>
+        <li>Calibrate: Input known vibration (50 Hz tone)&mdash;verify damping prediction.</li>
+        <li>Test: Point at quantum setup or brain (meditation)&mdash;expect higher &delta; during coherence.</li>
+    </ol>
+
+    <p><strong>Code for Inverse Solver:</strong></p>
+    <pre><code>import numpy as np
+from scipy.integrate import quad
+from scipy.optimize import root_scalar
+
+kappa = 1.0
+tau = 5.0
+
+def R(u):
+    return 1 + np.sin(2 * np.pi * u) * np.exp(-u / tau)
+
+def D(delta):
+    integrand = lambda u: np.exp(-kappa * u) * R(u)
+    return quad(integrand, 0, delta)[0]
+
+def locate_depth(D_measured, bracket=[0, 50]):
+    def func(delta):
+        return D(delta) - D_measured
+    sol = root_scalar(func, bracket=bracket)
+    return sol.root
+
+# Input D_measured from sensor
+D_measured = 1.0
+delta_p = locate_depth(D_measured)
+print(f"Measured depth: {delta_p:.2f}")</code></pre>
+
+    <h2>Depth Tuner: Aligning to Target Depth</h2>
+    <p><strong>Purpose:</strong> Actively tune to target &delta;&mdash;thin veil locally, calling deep effects (e.g., coherence enhancement, energy aggregation).</p>
+
+    <p><strong>How It Works:</strong></p>
+    <ul>
+        <li>Generate coherent field to shift phase &phi;<sub>eng</sub> in R<sub>eng</sub>(u).</li>
+        <li>Feedback: Measure with locator, adjust &phi;<sub>eng</sub> to lock on target.</li>
+        <li>Output: Local veil reduction&mdash;emergent effects (lift, intuition).</li>
+    </ul>
+
+    <p><strong>Needed Components</strong> (Repurposed, $300&ndash;800):</p>
+    <ul>
+        <li>Coherent EM source (diode laser/RF generator from ham radio)</li>
+        <li>Metamaterial resonator (3D-printed nanorod array or MRI coil repurposed)</li>
+        <li>Piezo actuators (haptic devices) for fine control</li>
+        <li>Arduino for feedback loop</li>
+    </ul>
+
+    <p><strong>Preliminary Build Instructions:</strong></p>
+    <ol>
+        <li>Build resonator: Nanorod array or coil for tunable cavity.</li>
+        <li>Couple EM source: Feed laser/RF&mdash;control frequency/phase via generator.</li>
+        <li>Add piezo feedback: Actuators adjust based on locator signal.</li>
+        <li>Software: Closed-loop code to target &delta;.</li>
+        <li>Calibrate: Tune to shallow resonance&mdash;verify lock.</li>
+        <li>Test: Target deep &delta;&mdash;expect measurable effect (voltage boost or phase anomaly).</li>
+    </ol>
+
+    <p><strong>Code for Tuning Loop</strong> (Simplified):</p>
+    <pre><code>target_delta = 5.0
+current_delta = locator_measure()  # From locator
+gain = 0.1
+while abs(current_delta - target_delta) > 0.1:
+    phi_adjust = (target_delta - current_delta) * gain
+    set_phase(phi_adjust)  # Hardware control
+    current_delta = locator_measure()
+print("Tuned to target depth")</code></pre>
+
+    <h2>Conclusion</h2>
+    <p>These devices enable measurement and tuning of transcendent depth, drawing on Satyalogos principles to bridge unity and manifestation. Start with the locator (passive)&mdash;test on quantum or bio-resonance setups.</p>
+
+    <blockquote>The veil thins&mdash;the One reveals.</blockquote>
+
+    <hr>
+    <p><small>&copy; 2025&ndash;2026 Dustin Ogle. All rights reserved.</small></p>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Dustin Ogle. All rights reserved.</p>
+        <p class="legal">Patent pending (USPTO, 2026). Copyright registered (USCO, 2026).</p>
+    </div>
+</footer>
+</body>
+</html>
