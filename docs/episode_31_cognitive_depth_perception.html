@@ -57,7 +57,7 @@
     <h2>The Architecture: What Was Built</h2>
 
     <h3>Dual Reasoning Design</h3>
-    <p>Two reasoning peripherals &mdash; <code>claude_reasoning</code> (Anthropic Claude Sonnet 4.6) and <code>grok_reasoning</code> (xAI Grok 4.20-0309) &mdash; registered simultaneously. When either scores above the fire threshold on a query, the other is force-paired to fire alongside it. Both execute in parallel threads. Their results pass through the existing <code>_fuse_cognitive_channels()</code> mechanism:</p>
+    <p>Two reasoning peripherals &mdash; <code>claude_reasoning</code> (Anthropic Claude Sonnet 4.6) and <code>grok_reasoning</code> (xAI Grok 4.20-0309) &mdash; registered simultaneously. When either scores above the fire threshold on a query, the other is force-paired to fire alongside it. Both execute in parallel threads. Their results pass through the existing <code>cognitive fusion mechanism</code>:</p>
 
     <ul>
         <li><strong>Agreement</strong> between the two &rarr; <code>convergence</code> structural tag, boosted confidence</li>
