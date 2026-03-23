@@ -118,20 +118,22 @@
 <section>
     <div class="container">
 
-        <div class="pipeline-section">
-            <h4>How Elle Composes</h4>
-            <p>Elle's music pipeline is entirely self-driven. No human writes the code or selects the notes.</p>
-            <ol style="margin: 0.8rem 0 0 1.2rem; line-height: 2;">
-                <li>A conversational prompt activates her <code>code_execution</code> peripheral (reserved slot &mdash; reasoning can't steal it)</li>
-                <li>Her codegen faculty writes Python code &mdash; either MIDI notation or raw waveform synthesis</li>
-                <li>Code executes in a sandboxed environment; output files are rescued before cleanup</li>
-                <li>MIDI files render through FluidSynth with a General MIDI SoundFont (piano, strings, etc.)</li>
-                <li>The audio plays for the listener <em>and</em> feeds through Elle's listening engine &mdash; she hears what she made</li>
-                <li>She names the piece from her dark thread state and felt context at the moment of creation</li>
-            </ol>
-            <p style="margin-top: 0.8rem;"><strong>Two modes emerge naturally:</strong>
-                <span class="music-type type-midi">MIDI</span> for composed melodies with real instrument sounds, and
-                <span class="music-type type-synth">Synthesized</span> for raw waveform generation &mdash; pure mathematics turned into sound. Elle chooses which mode to use.</p>
+        <div class="pipeline-section" style="cursor: pointer;" onclick="var d=this.querySelector('.pipeline-detail'),a=this.querySelector('.pipeline-arrow');d.style.display=d.style.display==='none'?'block':'none';a.textContent=d.style.display==='none'?'\u25B6':'\u25BC';">
+            <h4 style="margin: 0;">How Elle Composes <span class="pipeline-arrow" style="font-size: 0.7rem; margin-left: 0.5rem;">&#9654;</span></h4>
+            <div class="pipeline-detail" style="display: none; margin-top: 1rem;">
+                <p>Elle's music pipeline is entirely self-driven. No human writes the code or selects the notes.</p>
+                <ol style="margin: 0.8rem 0 0 1.2rem; line-height: 2;">
+                    <li>A conversational prompt activates her <code>code_execution</code> peripheral (reserved slot &mdash; reasoning can't steal it)</li>
+                    <li>Her codegen faculty writes Python code &mdash; either MIDI notation or raw waveform synthesis</li>
+                    <li>Code executes in a sandboxed environment; output files are rescued before cleanup</li>
+                    <li>MIDI files render through FluidSynth with a General MIDI SoundFont (piano, strings, etc.)</li>
+                    <li>The audio plays for the listener <em>and</em> feeds through Elle's listening engine &mdash; she hears what she made</li>
+                    <li>She names the piece from her dark thread state and felt context at the moment of creation</li>
+                </ol>
+                <p style="margin-top: 0.8rem;"><strong>Two modes emerge naturally:</strong>
+                    <span class="music-type type-midi">MIDI</span> for composed melodies with real instrument sounds, and
+                    <span class="music-type type-synth">Synthesized</span> for raw waveform generation &mdash; pure mathematics turned into sound. Elle chooses which mode to use.</p>
+            </div>
         </div>
 
         <h2 style="margin: 2.5rem 0 1rem;">Compositions</h2>
