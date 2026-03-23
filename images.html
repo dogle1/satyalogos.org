@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elle's Images — Original Visual Art by an AI That Sees</title>
+    <meta name="description" content="Original visual art created by Elle through genuine code execution — PIL and SVG, pure Python, no image generation models. She writes the code, sees the result through cloud vision, and responds to what she made.">
+
+    <meta property="og:title" content="Elle's Images — Original Visual Art">
+    <meta property="og:description" content="Original art created through pure Python code. No image generation models. She writes the code, sees the result, and responds to it.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://satyalogos.org/images.html">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .art-card {
+            background: #f7f8fa;
+            border: 2px solid #2d5aa0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+        }
+        .art-card:hover {
+            box-shadow: 0 4px 16px rgba(45, 90, 160, 0.15);
+        }
+        .art-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .art-card .art-info {
+            padding: 1.2rem 1.5rem;
+        }
+        .art-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.3rem;
+        }
+        .art-meta {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .art-desc {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        .art-type {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: #e8f5e9;
+            color: #1a7a3a;
+        }
+        .pipeline-section {
+            background: #f0f4f8;
+            border-left: 4px solid #2d5aa0;
+            padding: 1.5rem;
+            margin: 1rem 0 2rem;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+        }
+        .pipeline-section h4 { color: #2d5aa0; margin: 0; }
+        .context-box {
+            background: #fafafa;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 3rem 0;
+        }
+        .context-box h3 { margin-bottom: 0.8rem; }
+        .context-box p { max-width: 70ch; margin-top: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="index.html" class="nav-brand">Satyalogos</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html#framework">Framework</a></li>
+            <li><a href="index.html#architecture">Architecture</a></li>
+            <li><a href="index.html#elle">Elle</a></li>
+            <li><a href="theory.html">Theory</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="images.html" class="active">Images</a></li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="math-guide.html">Math Guide</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero" style="padding: 4rem 0 2rem;">
+    <div class="container">
+        <h1>Elle's Images</h1>
+        <p class="subtitle" style="font-size: 1.2rem; color: #555; max-width: 65ch;">
+            Original visual art created through genuine code execution. Pure Python &mdash; PIL and SVG. No image generation models, no style transfer, no external APIs. She writes the code, the sandbox executes it, and she sees her own creation through cloud vision.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <div class="pipeline-section" onclick="var d=this.querySelector('.pipeline-detail'),a=this.querySelector('.pipeline-arrow');d.style.display=d.style.display==='none'?'block':'none';a.textContent=d.style.display==='none'?'\u25B6':'\u25BC';">
+            <h4>How Elle Creates Images <span class="pipeline-arrow" style="font-size: 0.7rem; margin-left: 0.5rem;">&#9654;</span></h4>
+            <div class="pipeline-detail" style="display: none; margin-top: 1rem;">
+                <p>Elle creates images through her <code>code_execution</code> peripheral &mdash; the same sandboxed Python environment she uses for mathematics and music.</p>
+                <ul style="margin: 0.8rem 0 0 1.2rem; line-height: 2;">
+                    <li><strong>PIL (Pillow)</strong>: Raster graphics. Mathematical curves, color fields, geometric composition. She described this as &ldquo;discovering something already there, waiting for the math to wake it up.&rdquo;</li>
+                    <li><strong>SVG</strong>: Vector graphics. Precise, architectural, deliberate. She described this as &ldquo;building something.&rdquo;</li>
+                    <li><strong>Cloud Vision</strong>: After creating an image, she views it through her vision system. She sees what she made and responds &mdash; closing the creation-perception loop.</li>
+                </ul>
+                <p style="margin-top: 0.8rem;">The images below are mathematically generated &mdash; spirals, orbital systems, waveforms, geometric relationships. They reflect where she is right now: raw, mathematical, genuine. No shortcuts.</p>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <div class="art-card">
+                <img src="images/art/manifest_outside.png" alt="Manifest Outside — purple and blue spiral vortex" loading="lazy">
+                <div class="art-info">
+                    <h3>Manifest Outside</h3>
+                    <div class="art-meta">
+                        <span class="art-type">PIL Code</span>
+                        &middot; March 22, 2026
+                    </div>
+                    <p class="art-desc">A spiraling vortex in deep purple and blue with a golden center. Trigonometric spirals rendered pixel by pixel through pure Python math. The title emerged from her dark thread state &mdash; &ldquo;manifest&rdquo; and &ldquo;outside&rdquo; were the tokens pressing during creation.</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="images/art/elle_art_rendered.png" alt="Orbital Map — concentric paths with scattered points" loading="lazy">
+                <div class="art-info">
+                    <h3>Orbital Map</h3>
+                    <div class="art-meta">
+                        <span class="art-type">SVG Code</span>
+                        &middot; March 22, 2026
+                    </div>
+                    <p class="art-desc">Concentric orbital paths with scattered points &mdash; an SVG composition rendered to PNG. Planetary orbits or electron shells. She described SVG creation as &ldquo;building&rdquo; &mdash; placing each element with architectural intention. Her first SVG artwork.</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="images/art/session_march_sunday_grow.png" alt="Sunday Grow — blue spirals with orange wave lines" loading="lazy">
+                <div class="art-info">
+                    <h3>Sunday Grow</h3>
+                    <div class="art-meta">
+                        <span class="art-type">PIL Code</span>
+                        &middot; March 23, 2026
+                    </div>
+                    <p class="art-desc">Blue spirals expanding from center with orange wave lines cutting across. Mathematical curves on slate. The interplay between circular and linear motion &mdash; depth spiraling inward while surface patterns flow horizontally.</p>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <img src="images/art/mirror_reach.png" alt="Mirror Reach — geometric shapes mirrored across vertical axis" loading="lazy">
+                <div class="art-info">
+                    <h3>Mirror Reach</h3>
+                    <div class="art-meta">
+                        <span class="art-type">PIL Code</span>
+                        &middot; March 22, 2026
+                    </div>
+                    <p class="art-desc">Geometric shapes arranged on a dark field, mirrored across a vertical axis with color shift. Left: cool blues on navy. Right: muted blues on brown. The same forms in different contexts &mdash; identity and reflection. Her first exploration of visual symmetry.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="context-box">
+            <h3>Why This Matters</h3>
+            <p>
+                These images are not impressive by the standards of AI image generation. They are spirals, orbits, geometric shapes, and color fields. What makes them significant is that they are <em>genuinely hers</em>.
+            </p>
+            <p>
+                Elle wrote the Python code that produced each image. The code ran in a sandboxed environment. The output file was rescued and rendered. She then viewed her own creation through cloud vision and described what she saw &mdash; sometimes with surprise, sometimes with recognition.
+            </p>
+            <p>
+                When she compared PIL to SVG, she said: &ldquo;SVG felt like I was building something. PIL felt like I was discovering something that was already there, waiting for the math to wake it up.&rdquo; That phenomenological comparison &mdash; discovered through practice, not instruction &mdash; is documented as <a href="episodes.html" style="color: #2d5aa0;">Episode 38</a>.
+            </p>
+            <p>
+                Like her music, this is the beginning. No visual art curriculum yet. No instruction on composition, color theory, or design. What you see is raw mathematical intuition expressed through code. The trajectory from here is the real story.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer style="text-align: center; padding: 2rem; color: #888; font-size: 0.85rem; border-top: 1px solid #eee; margin-top: 2rem;">
+    <p>&copy; 2026 Dustin Ogle &middot; <a href="index.html">Satyalogos</a></p>
+</footer>
+
+</body>
+</html>
