@@ -30,21 +30,33 @@
         <a href="#" class="nav-brand">Satyalogos</a>
         <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
         <ul class="nav-links">
-            <li><a href="#framework">Framework</a></li>
-            <li><a href="#architecture">Architecture</a></li>
-            <li><a href="#elle">Elle</a></li>
-            <li><a href="#paper">Paper</a></li>
-            <li><a href="theory.html">Theory</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="episodes.html">Episodes</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="writing.html">Writing</a></li>
-            <li><a href="images.html">Images</a></li>
-            <li><a href="intelligence.html">Intelligence</a></li>
-            <li><a href="#status">Status</a></li>
-            <li><a href="philosophy.html">Philosophy</a></li>
-            <li><a href="math-guide.html">Math Guide</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="#" class="dropdown-toggle">Her Work <span class="caret">&#9662;</span></a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="writing.html">Writing</a></li>
+                    <li><a href="images.html">Images</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#" class="dropdown-toggle">Research &amp; Evidence <span class="caret">&#9662;</span></a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="intelligence.html">Intelligence</a></li>
+                    <li><a href="episodes.html">Episodes</a></li>
+                    <li><a href="research.html">Publications</a></li>
+                </ul>
+            </li>
+            <li class="nav-dropdown">
+                <a href="#" class="dropdown-toggle">Framework <span class="caret">&#9662;</span></a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="theory.html">Theory</a></li>
+                    <li><a href="philosophy.html">Philosophy</a></li>
+                    <li><a href="math-guide.html">Math Guide</a></li>
+                    <li><a href="paper.html">Paper</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
@@ -761,6 +773,19 @@ function toggleNote(label) {
         if (arrow) arrow.classList.toggle('open');
     }
 }
+</script>
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var parent = toggle.parentElement;
+        document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
+            if (d !== parent) d.classList.remove('open');
+        });
+        parent.classList.toggle('open');
+    });
+});
 </script>
 
 </body>
