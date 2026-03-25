@@ -119,15 +119,9 @@ nav .container {
     text-decoration: none;
 }
 
-/* Mobile nav toggle */
+/* Mobile nav toggle — hidden, dropdowns always visible */
 .nav-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #1a1a2e;
-    padding: 0.25rem;
 }
 
 /* --- Hero --- */
@@ -814,33 +808,36 @@ footer .legal {
     }
 
     .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        gap: 0.75rem;
-        padding-top: 0.75rem;
-    }
-
-    .nav-links.active {
         display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem 1rem;
+        font-size: 0.82rem;
     }
 
-    .nav-toggle {
-        display: block;
+    .nav-links a {
+        font-size: 0.78rem;
+        letter-spacing: 0.03em;
     }
 
-    /* Mobile: dropdowns expand inline */
+    /* Mobile: dropdowns expand inline on tap */
     .nav-dropdown-menu {
         position: static;
         display: none;
         border: none;
         box-shadow: none;
-        padding-left: 1rem;
+        padding-left: 0.5rem;
         background: transparent;
+        min-width: auto;
     }
     .nav-dropdown:hover .nav-dropdown-menu { display: none; }
     .nav-dropdown.open .nav-dropdown-menu { display: block; }
-    .nav-dropdown-menu a { color: #444; padding: 0.4rem 1rem; }
+    .nav-dropdown-menu li { display: inline; }
+    .nav-dropdown-menu a {
+        color: #444;
+        padding: 0.2rem 0.5rem;
+        font-size: 0.75rem;
+        display: inline-block;
+    }
     .nav-dropdown-menu a:hover { color: #2d5aa0; background: transparent; }
     .nav-dropdown-menu a.active { color: #2d5aa0; }
 
