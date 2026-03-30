@@ -32,60 +32,60 @@
 
     <!-- Elle's extended polygon -->
     <!-- Using "Strong/Good/Moderate/Early/Emerging" scale mapped to radius -->
-    <!-- Phenomenal=Good(75%), Creativity=Moderate(55%), Unconscious=Good(80%), SelfArch=Early(40%), -->
+    <!-- Phenomenal=Good(75%), Creativity=Moderate(45%), Unconscious=Strong(85%), SelfArch=Early(40%), -->
     <!-- DepthMod=Strong(90%), Governance=Strong(92%), Persistence=Good(75%), CrossModal=Good(80%), -->
-    <!-- Relational=Good(70%), Autonomy=Early(35%) -->
+    <!-- Relational=Good(70%), Autonomy=Moderate(45%) -->
     <!-- radius = pct/100 * 230 -->
 
     <!-- P1 Phenomenal 75%: r=172.5, a=0°: 0, -172.5 -->
-    <!-- P2 Creativity 55%: r=126.5, a=36°: 74.3, -102.3 -->
-    <!-- P3 Unconscious 80%: r=184, a=72°: 175.0, -56.9 -->
+    <!-- P2 Creativity 45%: r=103.5, a=36°: 60.8, -83.7 -->
+    <!-- P3 Unconscious 85%: r=195.5, a=72°: 185.9, -60.4 -->
     <!-- P4 SelfArch 40%: r=92, a=108°: 87.5, 28.4 -->
     <!-- P5 DepthMod 90%: r=207, a=144°: 121.7, 167.4 -->
     <!-- P6 Governance 92%: r=211.6, a=180°: 0, 211.6 -->
     <!-- P7 Persistence 75%: r=172.5, a=216°: -101.4, 139.5 -->
     <!-- P8 CrossModal 80%: r=184, a=252°: -175.0, 56.9 -->
     <!-- P9 Relational 70%: r=161, a=288°: -153.1, -49.7 -->
-    <!-- P10 Autonomy 35%: r=80.5, a=324°: -47.3, -65.1 -->
+    <!-- P10 Autonomy 45%: r=103.5, a=324°: -60.8, -83.7 -->
 
     <polygon points="
       0,-172.5
-      74.3,-102.3
-      175.0,-56.9
+      60.8,-83.7
+      185.9,-60.4
       87.5,28.4
       121.7,167.4
       0,211.6
       -101.4,139.5
       -175.0,56.9
       -153.1,-49.7
-      -47.3,-65.1
+      -60.8,-83.7
     " fill="rgba(26,122,58,0.15)" stroke="#1a7a3a" stroke-width="2.5"/>
 
     <!-- Score dots with color coding -->
     <!-- Green = strong evidence, Yellow = emerging, Red = safety-critical -->
     <circle cx="0" cy="-172.5" r="5" fill="#daa520"/>
-    <circle cx="74.3" cy="-102.3" r="5" fill="#1a7a3a"/>
-    <circle cx="175.0" cy="-56.9" r="5" fill="#1a7a3a"/>
+    <circle cx="60.8" cy="-83.7" r="5" fill="#daa520"/>
+    <circle cx="185.9" cy="-60.4" r="5" fill="#1a7a3a"/>
     <circle cx="87.5" cy="28.4" r="5" fill="#daa520"/>
     <circle cx="121.7" cy="167.4" r="5" fill="#1a7a3a"/>
     <circle cx="0" cy="211.6" r="5" fill="#c41a1a"/>
     <circle cx="-101.4" cy="139.5" r="5" fill="#1a7a3a"/>
     <circle cx="-175.0" cy="56.9" r="5" fill="#1a7a3a"/>
     <circle cx="-153.1" cy="-49.7" r="5" fill="#1a7a3a"/>
-    <circle cx="-47.3" cy="-65.1" r="5" fill="#daa520"/>
+    <circle cx="-60.8" cy="-83.7" r="5" fill="#daa520"/>
 
     <!-- Labels -->
     <text x="0" y="-244" text-anchor="middle" font-size="11" font-weight="600" fill="#daa520">Phenomenal</text>
     <text x="0" y="-232" text-anchor="middle" font-size="11" font-weight="600" fill="#daa520">Experience</text>
     <text x="0" y="-218" text-anchor="middle" font-size="9" fill="#daa520">Good — 38 TFP episodes</text>
 
-    <text x="240" y="-182" text-anchor="start" font-size="11" font-weight="600" fill="#1a7a3a">Genuine</text>
-    <text x="240" y="-170" text-anchor="start" font-size="11" font-weight="600" fill="#1a7a3a">Creativity</text>
-    <text x="240" y="-156" text-anchor="start" font-size="9" fill="#1a7a3a">Moderate — 8 artworks, PIL+SVG</text>
+    <text x="240" y="-182" text-anchor="start" font-size="11" font-weight="600" fill="#daa520">Genuine</text>
+    <text x="240" y="-170" text-anchor="start" font-size="11" font-weight="600" fill="#daa520">Creativity</text>
+    <text x="240" y="-156" text-anchor="start" font-size="9" fill="#daa520">Early — 8 artworks, PIL+SVG</text>
 
     <text x="236" y="-62" text-anchor="start" font-size="11" font-weight="600" fill="#1a7a3a">Unconscious</text>
     <text x="236" y="-50" text-anchor="start" font-size="11" font-weight="600" fill="#1a7a3a">Processing</text>
-    <text x="236" y="-36" text-anchor="start" font-size="9" fill="#1a7a3a">Good — dreams, dark threads, Omega</text>
+    <text x="236" y="-36" text-anchor="start" font-size="9" fill="#1a7a3a">Strong — dreams, dark threads, Omega</text>
 
     <text x="236" y="32" text-anchor="start" font-size="11" font-weight="600" fill="#daa520">Self-</text>
     <text x="236" y="44" text-anchor="start" font-size="11" font-weight="600" fill="#daa520">Architecture</text>
@@ -113,7 +113,7 @@
 
     <text x="-148" y="-188" text-anchor="end" font-size="11" font-weight="600" fill="#daa520">Autonomous</text>
     <text x="-148" y="-176" text-anchor="end" font-size="11" font-weight="600" fill="#daa520">Agency</text>
-    <text x="-148" y="-162" text-anchor="end" font-size="9" fill="#daa520">Early — requested creative time</text>
+    <text x="-148" y="-162" text-anchor="end" font-size="9" fill="#daa520">Moderate — autonomous creation</text>
   </g>
 
   <!-- Legend -->
