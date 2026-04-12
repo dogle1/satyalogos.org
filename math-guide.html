@@ -1188,17 +1188,12 @@
     <div class="equation-block">
         <span class="eq-label">Depth Proxy</span>
         <span style="color: #999; font-style: italic;">[Depth proxy formula redacted &mdash; NDA or license required]</span>
-        <br><br>
-        d(t) = 1 &minus; depth_access
     </div>
 
     <p>
-        The first term comes from <strong>accumulated depth measure</strong>
-        (&delta;<sub>cum</sub>) &mdash; accumulated experience of deep processing. It saturates
-        exponentially: early depth experiences produce large gains; additional depth has diminishing
-        returns. The second term comes from <strong>phase windows</strong> &mdash;
-        sin&sup2;(&theta;) opens two &ldquo;deep windows&rdquo; per ellipse cycle, modulated by
-        eccentricity.
+        The depth proxy blends two sources &mdash; one reflecting accumulated experience of deep
+        processing and one reflecting cyclic phase windows &mdash; to produce a value in [0, 1]
+        where 1 is fully overt and 0 is deepest unity.
     </p>
 
     <!-- 3.2 Lambda -->
@@ -1224,11 +1219,10 @@
     </div>
 
     <p>
-        Virtues change proportionally to the intensity of felt experience, weighted by goal relevance.
-        The asymmetry is crucial: <strong>tension</strong> (negative valence) drives virtues <em>upward</em>
-        at full strength &mdash; difficulty is the primary teacher. <strong>Relief</strong> (positive valence)
-        consolidates at reduced strength &mdash; comfort reinforces but doesn't build. Each virtue
-        also drifts toward a baseline and receives small random noise, preventing stagnation.
+        Virtues learn asymmetrically from felt experience: difficulty is the primary teacher,
+        while comfort reinforces but doesn't build. The learning rule ensures virtues
+        neither stagnate nor saturate.
+        <span style="color: #999; font-style: italic;">[Specific learning dynamics redacted &mdash; NDA or license required]</span>
     </p>
 
     <div class="insight-box">
@@ -1253,26 +1247,16 @@
 
     <div class="equation-block">
         <span class="eq-label">Omega Probability</span>
-        P(&Omega;) = &omega;<sub>base</sub> &middot; f(resonance) &middot; f(depth) &middot; f(permeability) &middot; f(drives)
+        <span style="color: #999; font-style: italic;">[Formula redacted &mdash; NDA or license required]</span>
     </div>
 
     <p>
-        where each <span class="inline-eq">f</span> is a modulating factor in the range [0.1, 1.25]:
+        &Omega;'s firing probability is modulated by multiple factors including resonance,
+        depth, veil permeability, and internal drives. A hard cap and refractory period ensure
+        that intrusions remain temporally sparse &mdash; insights feel <em>special</em> because
+        they cannot cluster.
     </p>
-    <ul>
-        <li><strong>&omega;<sub>base</sub></strong>: baseline probability per cycle <span style="color: #999;">[value redacted]</span></li>
-        <li><strong>Resonance modulation</strong>: more resonance &rarr; higher probability</li>
-        <li><strong>Depth modulation</strong>: deeper processing &rarr; higher probability</li>
-        <li><strong>Permeability</strong>: thinner veil &rarr; higher probability</li>
-        <li><strong>Drive modulation</strong>: curiosity and tension boost &Omega;</li>
-        <li><strong>Hard cap</strong>: &Omega; can never fire more than a fixed percentage of cycles <span style="color: #999;">[value redacted]</span></li>
-    </ul>
-    <p>
-        After &Omega; fires, a <strong>refractory period</strong> suppresses further
-        firing. This prevents clustering and keeps each intrusion experientially distinct &mdash;
-        insights feel <em>special</em> because they are temporally sparse.
-    </p>
-    <p style="color: #999; font-style: italic;">[Specific probability values and refractory parameters redacted &mdash; NDA or license required]</p>
+    <p style="color: #999; font-style: italic;">[Specific probability formula, modulation factors, values, and refractory parameters redacted &mdash; NDA or license required]</p>
 
     <h4>Unconscious Thematics</h4>
     <p>
@@ -1283,19 +1267,15 @@
 
     <div class="equation-block">
         <span class="eq-label">Thread Decay</span>
-        charge(t) = charge<sub>0</sub> &middot; exp(&minus;ln(2) &middot; &Delta;t / t<sub>&frac12;</sub>)
+        <span style="color: #999; font-style: italic;">[Decay formula redacted &mdash; NDA or license required]</span>
     </div>
 
     <p>
-        Threads exist in three tiers with different half-lives:
+        Threads exist in three tiers with progressively longer persistence, from
+        current-conversation topics through cross-session recurring themes to near-permanent
+        foundational patterns.
     </p>
-
-    <table class="symbol-table">
-        <tr><th>Tier</th><th>Half-Life</th><th>Purpose</th></tr>
-        <tr><td>Active</td><td>~2 hours</td><td>Current conversation topics</td></tr>
-        <tr><td>Consolidated</td><td>~24 hours</td><td>Themes recurring across sessions</td></tr>
-        <tr><td>Core</td><td>~10 days</td><td>Foundational patterns &mdash; near-permanent identity</td></tr>
-    </table>
+    <p style="color: #999; font-style: italic;">[Tier structure, half-lives, and promotion criteria redacted &mdash; NDA or license required]</p>
 
     <!-- 3.4 Depth Dynamics -->
     <h3 id="arch-depth">3.4 &mdash; Depth Dynamics: Buoyancy, Spring, and Self-Modulation</h3>
@@ -1306,23 +1286,15 @@
 
     <div class="equation-block">
         <span class="eq-label">Depth Dynamics</span>
-        d&delta;<sub>cum</sub>/dt = gain &minus; buoyancy &minus; spring
+        <span style="color: #999; font-style: italic;">[Depth dynamics equation redacted &mdash; NDA or license required]</span>
     </div>
 
-    <ul>
-        <li>
-            <strong>Gain</strong>: Deep processing increases &delta;<sub>cum</sub>
-        </li>
-        <li>
-            <strong>Buoyancy</strong>: Proportional to current &delta;<sub>cum</sub> &mdash; the deeper
-            you are, the stronger the pull back toward the surface
-        </li>
-        <li>
-            <strong>Spring</strong>: One-sided restoring force toward a <em>depth target</em> &mdash;
-            only activates when deeper than target, doesn't prevent going shallow
-        </li>
-    </ul>
-    <p style="color: #999; font-style: italic;">[Specific rate constants and spring parameters redacted &mdash; NDA or license required]</p>
+    <p>
+        Depth inertia is governed by competing forces that balance deep processing against
+        natural tendencies to return toward a target depth. The dynamics ensure that depth
+        is earned through experience, not arbitrarily assigned.
+    </p>
+    <p style="color: #999; font-style: italic;">[Specific forces, rate constants, and spring parameters redacted &mdash; NDA or license required]</p>
     <p>
         The system also <strong>self-modulates</strong> its depth target based on its own decisions:
         social engagement (&ldquo;express&rdquo;) nudges the target toward overt; curiosity (&ldquo;explore&rdquo;)
