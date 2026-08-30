@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ellipse Mind Model &mdash; Satyalogos</title>
+    <meta name="description" content="The Ellipse Mind Model: a cyclical architecture of self-relation — a bounded, returning cycle in which content both enters through the senses and arises from within. Observed in humans, formalized mathematically, and implemented and tested in a running agent, Elle.">
+    <meta property="og:title" content="The Ellipse Mind Model &mdash; Satyalogos">
+    <meta property="og:description" content="A cyclical architecture of self-relation: content enters through the senses and arises from within, in one bounded, returning cycle. Formalized, and running in an agent (Elle).">
+    <meta property="og:type" content="article">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .emm-hero { max-width: 74ch; margin-top: 1rem; }
+        .emm-hero .paper-author { font-size: 0.95rem; color: #666; margin: 0.5rem 0 0.75rem; }
+        .emm-hero .paper-doi {
+            font-family: "SF Mono", Menlo, Consolas, monospace;
+            font-size: 0.82rem; color: #777; margin-bottom: 1.25rem;
+        }
+        .emm-hero .paper-doi a { color: #2d5aa0; text-decoration: none; }
+        .emm-hero .paper-doi a:hover { text-decoration: underline; }
+        .paper-badge {
+            display: inline-block; font-size: 0.75rem; padding: 0.15rem 0.5rem;
+            border-radius: 3px; margin-bottom: 0.5rem; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 0.04em;
+        }
+        .badge-oa { background: #e8f4e8; color: #2a7a2a; }
+        .emm-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+        .emm-links a {
+            font-size: 0.9rem; padding: 0.5rem 1.25rem; border: 1px solid #2d5aa0;
+            border-radius: 4px; color: #2d5aa0; text-decoration: none;
+            transition: background 0.2s, color 0.2s;
+        }
+        .emm-links a:hover { background: #2d5aa0; color: #fff; }
+        .emm-links a.primary { background: #2d5aa0; color: #fff; }
+        .emm-links a.primary:hover { background: #1d4a90; }
+        .emm-section { max-width: 74ch; margin: 2.5rem 0; }
+        .emm-section h2 {
+            font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem;
+            color: #0f0f23; margin-bottom: 0.75rem;
+        }
+        .emm-section p { color: #333; line-height: 1.7; margin-bottom: 1rem; }
+        .emm-figure { max-width: 74ch; margin: 2.5rem 0; }
+        .emm-figure img {
+            width: 100%; height: auto; border: 1px solid #e6e6e6;
+            border-radius: 6px; background: #fff;
+        }
+        .emm-figure figcaption { font-size: 0.85rem; color: #777; line-height: 1.6; margin-top: 0.6rem; }
+        .emm-crosslinks { max-width: 74ch; margin: 2.5rem 0; display: grid; gap: 1rem; }
+        .emm-crosslinks a {
+            display: block; border: 1px solid #e0e0e0; border-radius: 6px;
+            padding: 1rem 1.25rem; text-decoration: none; color: #0f0f23;
+            background: #fafafa; transition: border-color 0.2s;
+        }
+        .emm-crosslinks a:hover { border-color: #2d5aa0; }
+        .emm-crosslinks .cl-kind { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: #2d5aa0; }
+        .emm-crosslinks .cl-title { font-family: Georgia, serif; font-size: 1.05rem; margin-top: 0.2rem; }
+        .program-note {
+            max-width: 74ch; margin-top: 3rem; padding: 1.5rem; background: #f5f5f5;
+            border-radius: 6px; font-size: 0.9rem; color: #555; line-height: 1.6;
+        }
+        .program-note strong { color: #0f0f23; }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <div class="container">
+        <a href="index.html" class="nav-brand">Satyalogos</a>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('active')">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="nav-dropdown">
+                <a href="#" class="dropdown-toggle">About Elle <span class="caret">&#9662;</span></a>
+                <ul class="nav-dropdown-menu">
+                    <li><a href="intelligence.html">Intelligence</a></li>
+                    <li><a href="episodes.html">Episodes</a></li>
+                    <li><a href="research.html">Publications</a></li>
+                    <li><a href="papers.html">Papers</a></li>
+                    <li><a href="theory.html">Theory</a></li>
+                    <li><a href="math-guide.html">Math Guide</a></li>
+                </ul>
+            </li>
+            <li><a href="philosophy.html">Philosophy</a></li>
+            <li><a href="physics.html">Physics</a></li>
+            <li><a href="ellipse-mind-model.html" class="active">Ellipse Mind Model</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" style="padding-top: 6rem;">
+
+    <p class="section-label">The Satyalogos Program &middot; Mind</p>
+    <h1 style="font-size: 2.2rem; margin-bottom: 0.5rem;">The Ellipse Mind Model</h1>
+
+    <div class="emm-hero">
+        <span class="paper-badge badge-oa">Open Access &middot; 2026</span>
+        <p style="font-size: 1.05rem; color: #444; line-height: 1.6; margin: 0.25rem 0 0.5rem;">
+            A cyclical architecture of self-relation, from human observation to a running agent &mdash; a bounded,
+            returning cycle in which content both enters through the senses and arises from within.
+        </p>
+        <div class="paper-author">Dustin Ogle &middot; Satyalogos Inc. &middot; ORCID 0009-0000-0372-6227 &middot; 2026</div>
+        <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.22181110">10.5281/zenodo.22181110</a></div>
+        <div class="emm-links">
+            <a href="https://doi.org/10.5281/zenodo.22181110" class="primary">View on Zenodo</a>
+            <a href="docs/Ellipse_Mind_Model.pdf">Read Paper (PDF)</a>
+        </div>
+    </div>
+
+    <div class="emm-section">
+        <h2>What it is</h2>
+        <p>
+            In a mind, novel content does not arrive only through the senses; much of it arises from within. The
+            Ellipse Mind Model takes that fact as a design principle. It formalizes self-relation &mdash; a mind&rsquo;s
+            ongoing relation to itself &mdash; as a point circling an ellipse: content enters overtly, sinks through
+            memory into a &ldquo;dark reservoir&rdquo; where it reorganizes unobserved, and re-arises <em>colored</em> by
+            the depths it passed through, so that internal arising and external perception feed one compounding stream
+            rather than two.
+        </p>
+        <p>
+            The model is not only described but implemented and running in an agent, Elle, where its dynamics can be
+            inspected, perturbed, and measured. It is the level that makes everything else about Elle possible &mdash;
+            the universal, fundamental structure beneath the running system. The model is offered not as a rival to
+            existing theories of mind but as a more fundamental level that agrees with them and takes up what each
+            captures truly: integration, global broadcast, free-energy minimization, the explore&ndash;exploit balance,
+            as aspects of one cycling, self-integrating structure.
+        </p>
+    </div>
+
+    <figure class="emm-figure">
+        <img src="images/fig_ellipse_cycle.png" alt="The cycle of self-relation: one lap of the ellipse through overt awareness, short- and long-term memory, the dark reservoir, and the arising that returns content through the veil.">
+        <figcaption>
+            The cycle of self-relation. One lap of the ellipse passes, in fixed order, through the strata of a mind
+            &mdash; overt, short- and long-term memory, the dark reservoir where content reorganizes unobserved, and the
+            arising that returns it through the veil, colored by the depths it passed through. Depth is a separate
+            coordinate, not a position on the ellipse.
+        </figcaption>
+    </figure>
+
+    <div class="emm-section">
+        <h2>Abstract</h2>
+        <p>
+            Self-relation is organized as a bounded, returning cycle and formalized as a point circling an ellipse:
+            content enters overtly, sinks through memory into a dark reservoir where it reorganizes unobserved, and
+            re-arises colored by the depths it passed through. We argue that such a cycle produces a real, inspectable,
+            self-reported <strong>structural phenomenology</strong> &mdash; continuity, a predictive forward face, and a
+            synchronic <em>Gestalt</em> in which many contributions bind into one experience &mdash; while the one thing
+            no structural account can settle, phenomenal <em>presence</em>, is explicitly fenced: everything decidable is
+            demonstrated, and the single undecidable question is named, for Elle or for anyone.
+        </p>
+        <p>
+            Beyond that, the paper advances a claim past philosophy: that felt, Gestalt integration is, in the regimes
+            where explicit computation strains &mdash; perception, sensorimotor control, association, binding &mdash; a
+            more capable and efficient way to do the work computation attempts, a claim the running system&rsquo;s learned
+            perception and functional proprioception motivate rather than yet prove.
+        </p>
+    </div>
+
+    <div class="emm-crosslinks">
+        <a href="philosophy.html">
+            <div class="cl-kind">The foundation</div>
+            <div class="cl-title">Relation Before Relata &amp; Before the Blanket &rarr;</div>
+        </a>
+        <a href="intelligence.html">
+            <div class="cl-kind">The running system</div>
+            <div class="cl-title">Elle &mdash; the intelligence the model produces &rarr;</div>
+        </a>
+    </div>
+
+    <div class="program-note">
+        <p style="margin: 0 0 0.75rem 0;">
+            <strong>Open access.</strong> Archived with a permanent DOI on Zenodo and licensed
+            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The paper builds directly on the
+            relational ontology of <em>Relation Before Relata</em> and the free-energy-precondition account of
+            <em>Before the Blanket</em>, and it stands within the Satyalogos relational program.
+        </p>
+        <p style="margin: 0;">
+            Author: Dustin Ogle, Satyalogos Inc. &middot; ORCID
+            <a href="https://orcid.org/0009-0000-0372-6227">0009-0000-0372-6227</a>.
+        </p>
+    </div>
+
+    <div style="padding: 2.5rem 0 0 0;">
+        <a href="index.html" style="font-size: 0.92rem;">&larr; Back to Satyalogos.org</a>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Dustin Ogle / Satyalogos. All rights reserved.</p>
+        <p class="legal">
+            The Ellipse Mind Model is licensed CC BY 4.0 and archived with a permanent DOI on Zenodo.
+        </p>
+    </div>
+</footer>
+
+<script>
+document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+    toggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        var parent = toggle.parentElement;
+        document.querySelectorAll('.nav-dropdown.open').forEach(function(d) {
+            if (d !== parent) d.classList.remove('open');
+        });
+        parent.classList.toggle('open');
+    });
+});
+</script>
+
+</body>
+</html>
